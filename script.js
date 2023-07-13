@@ -42,11 +42,7 @@ function Check(){
     document.getElementById("blueElement").value = "";
 
     document.getElementById("score-num").textContent = "Score: " + score;
-
-    // console.log(red + " " + green + " " + blue);
-    // console.log(redElement + " " + greenElement + " " + blueElement);
-    // console.log(redOffset + " " + greenOffset + " " + blueOffset);
-    // console.log(score);
+    
     changeColor();
 }
 
