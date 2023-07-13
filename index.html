@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ColorGuessr</title>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+
+<body> 
+<div class="main">
+    <div class="title">
+        <div class="c">
+            <h1>C</h1>
+        </div>
+        <div class="o1">
+            <h1>O</h1>
+        </div>
+        <div class="l">
+            <h1>L</h1>
+        </div>
+        <div class="o2">
+            <h1>O</h1>
+        </div>
+        <div class="r1">
+            <h1>R</h1>
+        </div>
+        <div class="g">
+            <h1>G</h1>
+        </div>
+        <div class="u">
+            <h1>U</h1>
+        </div>
+        <div class="e">
+            <h1>E</h1>
+        </div>
+        <div class="s1">
+            <h1>S</h1>
+        </div>
+        <div class="s2">
+            <h1>S</h1>
+        </div>
+        <div class="r2">
+            <h1>R</h1>
+        </div>
+    </div>
+</div>
+
+<div class="instructions">
+    <h2>The Lower the better</h2>
+</div>
+<div class="score">
+    <h1 id="score-num">Score:<br/></h1>
+</div>
+
+<div class="main-box">
+    <div id="game-container"></div>
+</div>
+
+ <div class="all-inputs-div">
+    <form>
+        <div class="inputs-div2">
+            <div class="individual-inputs">
+                <label class="color-label">Red: </label>
+                <input id="redElement" class="each-input" required> 
+            </div>
+            <div class="individual-inputs">
+                <label class="color-label">Green: </label>
+                <input id="greenElement" class="each-input" required>
+            </div>
+            <div class="individual-inputs">
+                <label class="color-label">Blue: </label>
+                <input id="blueElement" class="each-input" required> 
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="button-div">
+    <button class="check" onclick="Check()">Check</button>
+</div> 
+
+
+
+
+
+<script src="script.js" defer></script>
+</body>
+
+</html>

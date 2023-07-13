@@ -1,0 +1,242 @@
+:root{
+    font-family: sans-serif;
+    --fs-title: .9rem;
+    --title-outline:  .07rem black;
+    --game-container-size: 7rem;
+    --game-container-margin: 1rem;
+    --color-label: 1rem;
+    --color-input-width: 99%;
+    --color-input-height: 2rem;
+    --color-margin: .5rem;
+    --color-padding: 0.2rem;
+    --fs-check-buton: .9rem; 
+    --check-button-width: 10rem;
+    --check-button-height: 2.5rem;
+}
+@media (min-width: 20em){
+    :root {
+        --fs-title: 1.25rem;
+        --title-outline:  .1rem black;
+        --game-container-size:10rem;
+        --game-container-margin: 2rem;
+        --color-label: 1rem;
+        --color-input-height: 2rem;
+    }
+}
+@media (min-width: 30em){
+    :root {
+        --fs-title: 1.25rem;
+        --title-outline:  .1rem black;
+        --game-container-size: 10rem;
+        --game-container-margin: 0rem;
+        --color-label: 1rem;
+        --color-input-width: 98%;
+        --color-input-height: 2rem;
+        --check-button-width: 15rem;
+        --check-button-height: 3rem;
+    }
+    .all-inputs-div{
+        display: flex;
+        justify-content: center;
+    }
+    .inputs-div2{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 40em){
+    :root {
+        --fs-title: 2.5rem;
+        --title-outline:  .15rem black;
+        --game-container-size: 10rem;
+        --color-label: 1.5rem;
+        --color-input-width: 10rem;
+        --color-input-height: 1.75rem;
+        --check-button-width: 15rem;
+        --check-button-height: 3rem;
+    }
+}
+@media (min-width: 60em){
+    :root {
+        --fs-title: 3.5rem;
+        --title-outline:  .2rem black;
+        --game-container-size: 15rem;
+        --color-label: 1.5rem;
+        --color-input-width: 15rem;
+        --color-input-height: 2rem;
+        --fs-check-buton: .9rem; 
+        --check-button-width: 20rem;
+        --check-button-height: 4rem;
+    }
+}
+
+
+*{
+    margin-top: 0.2rem;
+    padding: 0;
+}
+
+body{
+    background-color: dimgray;
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.c{
+    color: red;
+    font-size: var(--fs-title);
+    -webkit-text-stroke: var(--title-outline);
+}
+
+.o1{
+    color: green;
+    font-size: var(--fs-title);
+    -webkit-text-stroke: var(--title-outline);
+}
+
+.l{
+    color: blue;
+    font-size: var(--fs-title);
+    -webkit-text-stroke: var(--title-outline);
+}
+
+.o2{
+    color: red;
+    font-size: var(--fs-title);
+    -webkit-text-stroke: var(--title-outline);
+}
+
+.r1{
+    color: green;
+    font-size: var(--fs-title);
+    -webkit-text-stroke: var(--title-outline);
+}
+
+.g{
+    color: blue;
+    font-size: var(--fs-title);
+    -webkit-text-stroke: var(--title-outline);
+}
+.u{
+    color: red;  
+    font-size: var(--fs-title);
+    -webkit-text-stroke: var(--title-outline);  
+}
+
+.e{
+    color: green;
+    font-size: var(--fs-title);
+    -webkit-text-stroke: var(--title-outline);
+}
+
+.s1{
+    color: blue;
+    font-size: var(--fs-title);
+    -webkit-text-stroke: var(--title-outline);
+}
+
+.s2{
+    color: red;
+    font-size: var(--fs-title);
+    -webkit-text-stroke: var(--title-outline);
+}
+
+.r2{
+    color: green;
+    font-size: var(--fs-title);
+    -webkit-text-stroke: var(--title-outline);
+}
+
+.main-box{
+    display: flex;
+    justify-content: center;
+} 
+
+#game-container{
+    
+    background-color: silver;
+    border-style: solid;
+    border-radius: .5vw;
+    color: black;
+    height: var(--game-container-size);
+    width: var(--game-container-size);
+    margin-top: var(--game-container-margin);
+}
+
+.each-input{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    width: var(--color-input-width);
+    height: var(--color-input-height);
+}
+
+.individual-inputs{
+    display: block;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    margin: var(--color-margin);
+    padding: var(--color-padding);
+    
+}
+
+.color-label{
+    font-size: var(--color-label);
+} 
+
+button{
+    width: var(--check-button-width);
+    height: var(--check-button-height);
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+    background: black;
+}
+
+.check{
+    font-size : var(--fs-check-buton);
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.instructions{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.score-label{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
