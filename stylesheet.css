@@ -1,3 +1,4 @@
+/* root variables */
 :root{
     font-family: sans-serif;
     --fs-title: .9rem;
@@ -13,7 +14,8 @@
     --check-button-width: 10rem;
     --check-button-height: 2.5rem;
 }
-@media (min-width: 20em){
+/* reactive variable at different widths */
+@media (min-width: 25em){
     :root {
         --fs-title: 1.25rem;
         --title-outline:  .1rem black;
@@ -48,7 +50,7 @@
     :root {
         --fs-title: 2.5rem;
         --title-outline:  .15rem black;
-        --game-container-size: 10rem;
+        --game-container-size: 15rem;
         --color-label: 1.5rem;
         --color-input-width: 10rem;
         --color-input-height: 1.75rem;
@@ -79,12 +81,12 @@
 body{
     background-color: dimgray;
 }
-
 .main{
     display:flex;
     justify-content: center;
 }
 
+/* title */
 .title{
     display: flex;
     justify-content: center;
@@ -155,12 +157,12 @@ body{
     font-size: var(--fs-title);
     -webkit-text-stroke: var(--title-outline);
 }
+/* title end */
 
 .main-box{
     display: flex;
     justify-content: center;
 } 
-
 #game-container{
     
     background-color: silver;
