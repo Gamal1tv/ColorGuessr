@@ -8,12 +8,12 @@
     --instructions-padding-bottom: 1rem;
     --score-padding-bottom: 2rem;
     --game-container-size: 7rem;
-    --game-container-margin: 1rem;
     --color-label: 1rem;
     --color-input-width: 99%;
     --color-input-height: 2rem;
     --color-margin: .5rem;
     --color-padding: 0.2rem;
+    --fs-input-field: 30px;
     --fs-check-buton: .9rem; 
     --check-button-width: 10rem;
     --check-button-height: 2.5rem;
@@ -25,7 +25,6 @@
         --title-outline:  .1rem black;
         --title-container-height: 5rem;
         --game-container-size:10rem;
-        --game-container-margin: 2rem;
         --color-label: 1rem;
         --color-input-height: 2rem;
     }
@@ -36,7 +35,6 @@
         --title-outline:  .1rem black;
         --title-container-height: 6rem;
         --game-container-size: 10rem;
-        --game-container-margin: 0rem;
         --color-label: 1rem;
         --color-input-width: 98%;
         --color-input-height: 2rem;
@@ -198,7 +196,6 @@ body{
     color: black;
     height: var(--game-container-size);
     width: var(--game-container-size);
-    margin-top: var(--game-container-margin);
 }
 
 /* Input fields and lables*/
@@ -219,6 +216,11 @@ body{
     margin: var(--color-margin);
     padding: var(--color-padding);
     
+}
+
+input{
+    font-size: var(--fs-input-field);
+    text-align: center;
 }
 
 .color-label{
