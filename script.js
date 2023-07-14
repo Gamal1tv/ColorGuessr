@@ -22,15 +22,16 @@ function Check(){
     greenElement = document.getElementById("greenElement").value;
     blueElement = document.getElementById("blueElement").value;
 
-    //exit method and reset input boxes if user did not enter a valid number for any of the 3 colors
-    if (!parseInt(redElement) || !parseInt(greenElement) || !parseInt(blueElement))
+    //exit method if inputs are invalid
+    if (!/^\d+$/.test(redElement.trim()) || !/^\d+$/.test(greenElement.trim()) || !/^\d+$/.test(greenElement.trim())) //if user enters anything other than numbers
     {
         document.getElementById("redElement").value = "";
         document.getElementById("greenElement").value = "";
         document.getElementById("blueElement").value = "";
         return;
     }
-    if (redElement < 0 || redElement > 255)
+    //if any value is not between 0-255
+    if (redElement < 0 || redElement > 255) 
     {
         document.getElementById("redElement").value = "";
         document.getElementById("greenElement").value = "";
