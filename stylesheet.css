@@ -1,8 +1,12 @@
 /* root variables */
 :root{
     font-family: sans-serif;
-    --fs-title: .9rem;
+    --fs-title: 1rem;
     --title-outline:  .07rem black;
+    --title-container-height: 4rem;
+    --title-padding-top: 1rem;
+    --instructions-padding-bottom: 1rem;
+    --score-padding-bottom: 2rem;
     --game-container-size: 7rem;
     --game-container-margin: 1rem;
     --color-label: 1rem;
@@ -17,8 +21,9 @@
 /* reactive variable at different widths */
 @media (min-width: 25em){
     :root {
-        --fs-title: 1.25rem;
+        --fs-title: 1.4rem;
         --title-outline:  .1rem black;
+        --title-container-height: 5rem;
         --game-container-size:10rem;
         --game-container-margin: 2rem;
         --color-label: 1rem;
@@ -27,8 +32,9 @@
 }
 @media (min-width: 30em){
     :root {
-        --fs-title: 1.25rem;
+        --fs-title: 1.6rem;
         --title-outline:  .1rem black;
+        --title-container-height: 6rem;
         --game-container-size: 10rem;
         --game-container-margin: 0rem;
         --color-label: 1rem;
@@ -50,7 +56,8 @@
     :root {
         --fs-title: 2.5rem;
         --title-outline:  .15rem black;
-        --game-container-size: 15rem;
+        --title-container-height: 8rem;
+        --game-container-size: 13rem;
         --color-label: 1.5rem;
         --color-input-width: 10rem;
         --color-input-height: 1.75rem;
@@ -58,10 +65,11 @@
         --check-button-height: 3rem;
     }
 }
-@media (min-width: 60em){
+@media (min-width: 85em){
     :root {
         --fs-title: 3.5rem;
         --title-outline:  .2rem black;
+        --title-container-height: 9rem;
         --game-container-size: 15rem;
         --color-label: 1.5rem;
         --color-input-width: 15rem;
@@ -72,21 +80,26 @@
     }
 }
 
-
+/* apply to all */
 *{
-    margin-top: 0.2rem;
+    margin: 0;
     padding: 0;
 }
 
+/* backgroud color */
 body{
     background-color: dimgray;
 }
+
+/* title container */
 .main{
+    height: var(--title-container-height);
+    padding-top: var(--title-padding-top);
     display:flex;
     justify-content: center;
 }
 
-/* title */
+/* Title */
 .title{
     display: flex;
     justify-content: center;
@@ -157,8 +170,22 @@ body{
     font-size: var(--fs-title);
     -webkit-text-stroke: var(--title-outline);
 }
-/* title end */
 
+/* Intructions and score */
+.instructions{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: var(--instructions-padding-bottom);
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    padding-bottom: var(--score-padding-bottom);
+}
+
+/* Generated color containers */
 .main-box{
     display: flex;
     justify-content: center;
@@ -174,6 +201,7 @@ body{
     margin-top: var(--game-container-margin);
 }
 
+/* Input fields and lables*/
 .each-input{
     display: flex;
     justify-content: center;
@@ -197,6 +225,7 @@ body{
     font-size: var(--color-label);
 } 
 
+/* Check button */
 button{
     width: var(--check-button-width);
     height: var(--check-button-height);
@@ -219,26 +248,3 @@ button{
 button:hover{
     cursor: pointer;
 }
-
-.instructions{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.score-label{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.score{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-

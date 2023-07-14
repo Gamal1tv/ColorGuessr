@@ -2,13 +2,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ColorGuessr</title>
-<link rel="stylesheet" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Responsive to viewport-->
+<title>ColorGuessr</title> <!--Title on browser tab-->
+<link rel="stylesheet" href="stylesheet.css"> <!--Link to stylesheet-->
 </head>
 
 
 <body> 
+<!--Title of game in browser-->
 <div class="main">
     <div class="title">
         <div class="c">
@@ -47,45 +48,48 @@
     </div>
 </div>
 
+<!--Instructions-->
 <div class="instructions">
-    <h2>The Lower the better</h2>
+    <h3>The Lower The Score The Better<br>Each Red, Green, And Blue Value Should Be Within 0-255</h3>
 </div>
 <div class="score">
-    <h1 id="score-num">Score:<br/></h1>
+    <h1 id="score-num">Score:</h1>
 </div>
 
+<!--Generated color container-->
 <div class="main-box">
     <div id="game-container"></div>
 </div>
 
+<!--User inputs container-->
  <div class="all-inputs-div">
     <form>
         <div class="inputs-div2">
+            <!--Red inputs container-->
             <div class="individual-inputs">
                 <label class="color-label">Red: </label>
-                <input id="redElement" class="each-input" required> 
+                <input id="redElement" class="each-input"> 
             </div>
+            <!--Green inputs container-->
             <div class="individual-inputs">
                 <label class="color-label">Green: </label>
-                <input id="greenElement" class="each-input" required>
+                <input id="greenElement" class="each-input">
             </div>
+            <!--Blue inputs container-->
             <div class="individual-inputs">
                 <label class="color-label">Blue: </label>
-                <input id="blueElement" class="each-input" required> 
+                <input id="blueElement" class="each-input"> 
             </div>
         </div>
     </form>
 </div>
 
+<!--Check button container-->
 <div class="button-div">
     <button class="check" onclick="Check()">Check</button>
 </div> 
 
-
-
-
-
+<!--Link to javascript-->
 <script src="script.js" defer></script>
 </body>
-
 </html>
