@@ -23,7 +23,7 @@ function Check(){
     blueElement = document.getElementById("blueElement").value;
 
     //exit method if inputs are invalid
-    if (!/^\d+$/.test(redElement.trim()) || !/^\d+$/.test(greenElement.trim()) || !/^\d+$/.test(greenElement.trim())) //if user enters anything other than numbers
+    if (!/^\d+$/.test(redElement.trim()) || !/^\d+$/.test(greenElement.trim()) || !/^\d+$/.test(blueElement.trim())) //if user enters anything other than numbers
     {
         document.getElementById("redElement").value = "";
         document.getElementById("greenElement").value = "";
