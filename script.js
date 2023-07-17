@@ -74,6 +74,7 @@ function Check(){
 
     //display score
     document.getElementById("score-num").textContent = "Score: " + score;
+    document.getElementById("last-colors-values").textContent = "Last Values were: (Red: " + red + ") (Green: " + green + ") (Blue: " + blue + ")";
     //reset input fields
     document.getElementById("redElement").value = "";
     document.getElementById("greenElement").value = "";
