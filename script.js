@@ -72,9 +72,9 @@ function Check(){
     //add up differences to get score
     score = redOffset + greenOffset + blueOffset;
 
-    //display score
+    //display score and previous color's values
     document.getElementById("score-num").textContent = "Score: " + score;
-    document.getElementById("last-colors-values").textContent = "Last Values were: (Red: " + red + ") (Green: " + green + ") (Blue: " + blue + ")";
+    document.getElementById("last-colors-values").textContent = "Previous Colors Values Were: (Red: " + red + ") (Green: " + green + ") (Blue: " + blue + ")";
     //reset input fields
     document.getElementById("redElement").value = "";
     document.getElementById("greenElement").value = "";
